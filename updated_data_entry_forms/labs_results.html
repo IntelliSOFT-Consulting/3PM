@@ -1,0 +1,417 @@
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>--><script type="text/javascript">
+    (function($) {
+        $("doucment").ready(function() {
+            $("tr.rtcqi").hide();
+            $("tr.slmta").hide();
+            $("tr.bioSafety").hide();
+            $("tr.equipment").hide();
+            $("tr.bloodSafety").hide();
+            $("tr.ipc").hide();
+            $("tr.testing").hide();
+            $("#choice").change(function() {
+                if ($(this).val() === "yes"){
+                    $("tr.rtcqi").show();
+                    $("tr.slmta").show();
+                    $("tr.bioSafety").show();
+                    $("tr.equipment").show();
+                    $("tr.bloodSafety").show();
+                    $("tr.ipc").show();
+                    $("tr.testing").show();
+                }
+                if ($(this).val() === "no"){
+                    $("tr.rtcqi").hide();
+                    $("tr.slmta").hide();
+                    $("tr.bioSafety").hide();
+                    $("tr.equipment").hide();
+                    $("tr.bloodSafety").hide();
+                    $("tr.ipc").hide();
+                    $("tr.testing").hide();
+                }
+            });
+        });
+
+    })(jQuery);
+</script>
+<style type="text/css">table { font-family: arial, sans-serif; width: 100%; } th{ background-color: rgb(39, 102, 150); color: white; text-align: center; border: 1px solid #dddddd; padding: 1px; } td { border: 1px solid #dddddd; text-align: left; padding: 1px; } @-moz-document url-prefix() { .thWidth[style]{ min-width: 160px !important; text-align: center; } .indicatorWidth{ min-width: 90px !important; } } table input{ min-width: 438px; text-align: center; }
+</style>
+<table style="display:block;">
+	<thead style="display:block; position: sticky;top:0;">
+		<tr>
+			<th colspan="3" style="color: white;">
+			<h1 style="color: white; text-align: center;">Labs Results</h1>
+			</th>
+		</tr>
+		<tr>
+			<th style="color: white;text-align: center; min-width:90px">Test</th>
+			<th style="color: white;text-align: center; min-width:650px">Indicator</th>
+			<th style="color: white;text-align: center; min-width:450px">Result</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="indicatorWidth" colspan="1" rowspan="9" style="min-width:90px; background-color: rgb(237, 125, 49);">Viral Load</td>
+			<td style="min-width:650px">Does the Lab test for VL?</td>
+			<td style="min-width:450px"><input id="FyKL5SM9UwM-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad:Does the Lab test for VL?" value="[ Lab_Result_ViralLoad:Does the Lab test for VL? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Number of VL samples tested this quarter</td>
+			<td style="min-width:50px"><input id="a81vPAbHQ5P-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad:Number of VL samples tested this quarter" value="[ Lab_Result_ViralLoad:Number of VL samples tested this quarter ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">What is the average TAT in this quarter (days)</td>
+			<td style="min-width:50px"><input id="byqQ2dGNACz-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad: What is the average  TAT in this quarter (days)" value="[ Lab_Result_ViralLoad: What is the average  TAT in this quarter (days) ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Does the Lab refer VL samples to another Lab for Testing?</td>
+			<td style="min-width:50px"><input id="t0uvz4yzqec-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad: Does the Lab refer VL samples to another Lab for Testing?" value="[ Lab_Result_ViralLoad: Does the Lab refer VL samples to another Lab for Testing? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Number of VL samples referred from this lab this quarter</td>
+			<td style="min-width:50px"><input id="vckT72xfpQg-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad: Number of VL samples referred from this lab this quarter" value="[ Lab_Result_ViralLoad: Number of VL samples referred from this lab this quarter ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">What is the Average TAT in this quarter (days)</td>
+			<td style="min-width:50px"><input id="pBWAAN7Pipp-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad: What is the Average  TAT in this quarter (days)" value="[ Lab_Result_ViralLoad: What is the Average  TAT in this quarter (days) ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Did the site participate in VL PT this quarter?</td>
+			<td style="min-width:50px"><input id="KVaIc07gsS9-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad:Did the site participate in VL PT this quarter?" value="[ Lab_Result_ViralLoad:Did the site participate in VL PT this quarter? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Did the site pass in VL PT?</td>
+			<td style="min-width:50px"><input id="EBzEl4IOmd9-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad:Did the site pass in VL PT?" value="[ Lab_Result_ViralLoad:Did the site pass in VL PT? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Was corrective action done and documented for failed VL PT?</td>
+			<td style="min-width:50px"><input id="MBi8mGXiG1V-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad:Was corrective action done and documented for failed VL PT?" value="[ Lab_Result_ViralLoad:Was corrective action done and documented for failed VL PT? ]" /></td>
+		</tr>
+		<tr>
+			<td rowspan="9" style="min-width:50px; background-color: rgb(255, 229, 152);">EID</td>
+			<td style="min-width:50px">Does the lab test for EID?</td>
+			<td style="min-width:50px"><input id="wq08g1ALNbb-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:Does the test for EID?" value="[ Lab_Result_EID:Does the test for EID? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Number of EID samples tested this quarter</td>
+			<td style="min-width:50px"><input id="Hb6M9kCbzxd-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:Number of EID samples tested this quarter" value="[ Lab_Result_EID:Number of EID samples tested this quarter ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">What is the average TAT in this quarter (days)</td>
+			<td style="min-width:50px"><input id="VMKrrpc4Vhh-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:What is the average  TAT in this quarter (days)" value="[ Lab_Result_EID:What is the average  TAT in this quarter (days) ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Does the Lab refer EID samples to another Lab for Testing?</td>
+			<td style="min-width:50px"><input id="OMOfPxWopxy-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:Does the Lab refer EID samples to another Lab for Testing?" value="[ Lab_Result_EID:Does the Lab refer EID samples to another Lab for Testing? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Number of VL samples referred from this lab this quarter</td>
+			<td style="min-width:50px"><input id="qN9CqvFhray-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:Number of VL samples referred from this lab this quarter" value="[ Lab_Result_EID:Number of VL samples referred from this lab this quarter ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">What is the Average TAT in this quarter (days)</td>
+			<td style="min-width:50px"><input id="E6q1NEp8uEP-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:What is the Average  TAT in this quarter (days)" value="[ Lab_Result_EID:What is the Average  TAT in this quarter (days) ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Did the site participate in EID PT this quarter?</td>
+			<td style="min-width:50px"><input id="y7VlX2HuQvy-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:Did the site participate in EID  PT this quarter?" value="[ Lab_Result_EID:Did the site participate in EID  PT this quarter? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Did the site pass in EID PT?</td>
+			<td style="min-width:50px"><input id="w2iThRTJKmE-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:Did the site pass in EID PT?" value="[ Lab_Result_EID:Did the site pass in EID PT? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Was corrective action done and documented for failed EID PT?</td>
+			<td style="min-width:50px"><input id="vbj8gLgZKwh-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:Was corrective action done and documented for failed EID PT?" value="[ Lab_Result_EID:Was corrective action done and documented for failed EID PT? ]" /></td>
+		</tr>
+		<tr>
+			<td rowspan="9" style="min-width:50px; background-color: rgb(168, 208, 141);">TB Culture</td>
+			<td style="min-width:50px">Does the test for TB Culture?</td>
+			<td style="min-width:50px"><input id="XvjpzoReVqw-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:Does the test for TB Culture?" value="[ Lab_Result_TBCulture:Does the test for TB Culture? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Number of TB Culture samples tested this quarter</td>
+			<td style="min-width:50px"><input id="JW56Kn5K82I-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:Number of TB Culture samples tested this quarter" value="[ Lab_Result_TBCulture:Number of TB Culture samples tested this quarter ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">What is the average TAT in this quarter (days)</td>
+			<td style="min-width:50px"><input id="K60MUenzhk7-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:What is the average  TAT in this quarter (days)" value="[ Lab_Result_TBCulture:What is the average  TAT in this quarter (days) ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Does the Lab refer TB culture samples to another Lab for Testing?</td>
+			<td style="min-width:50px"><input id="STvvGCTgjm4-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:Does the Lab refer TB culture samples to another Lab for Testing?" value="[ Lab_Result_TBCulture:Does the Lab refer TB culture samples to another Lab for Testing? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Number of TB culture samples referred from this lab this quarter</td>
+			<td style="min-width:50px"><input id="kzS0p2B0Y2A-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:Number of TB culture samples referred from this lab this quarter" value="[ Lab_Result_TBCulture:Number of TB culture samples referred from this lab this quarter ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">What is the Average TAT in this quarter (days)</td>
+			<td style="min-width:50px"><input id="pAuBEkOeMEZ-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:What is the Average  TAT in this quarter (days)" value="[ Lab_Result_TBCulture:What is the Average  TAT in this quarter (days) ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Did the site participate in TB culture EQA this quarter?</td>
+			<td style="min-width:50px"><input id="y6u2kjT3F8s-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:Did the site participate in TB culutre EQA this quarter?" value="[ Lab_Result_TBCulture:Did the site participate in TB culutre EQA this quarter? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Did the site pass in TB culture PT?</td>
+			<td style="min-width:50px"><input id="Dyxw1oYlFuF-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:Did the site pass in TB culutre PT?" value="[ Lab_Result_TBCulture:Did the site pass in TB culutre PT? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Was corrective action done and documented for failed TB culture PT?</td>
+			<td style="min-width:50px"><input id="lYnizCDhXkk-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:Was corrective action done and documented for failed  TB culutre PT?" value="[ Lab_Result_TBCulture:Was corrective action done and documented for failed  TB culutre PT? ]" /></td>
+		</tr>
+		<tr>
+			<td rowspan="9" style="min-width:50px; background-color: rgb(214, 220, 228);">Gene Expert</td>
+			<td style="min-width:50px">Does the test for GeneExpert?</td>
+			<td style="min-width:50px"><input id="BjD6lDXEESB-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:Does the test for GeneExpert?" value="[ Lab_Result_GeneXpert:Does the test for GeneExpert? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Number of Genexpert samples tested this quarter</td>
+			<td style="min-width:50px"><input id="B5jb2YGaSUn-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:Number of Genexpert samples tested this quarter" value="[ Lab_Result_GeneXpert:Number of Genexpert samples tested this quarter ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">What is the average TAT in this quarter (days)</td>
+			<td style="min-width:50px"><input id="VmSjbP2nbON-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:What is the average  TAT in this quarter (days)" value="[ Lab_Result_GeneXpert:What is the average  TAT in this quarter (days) ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Does the Lab refer GeneXpert samples to another Lab for Testing?</td>
+			<td style="min-width:50px"><input id="VxubN6ktRWA-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:Does the Lab refer GeneXpert samples to another Lab for Testing?" value="[ Lab_Result_GeneXpert:Does the Lab refer GeneXpert samples to another Lab for Testing? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Number of GeneXpert samples referred from this lab this quarter</td>
+			<td style="min-width:50px"><input id="lGuscKVzhQz-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:Number of GeneXpert samples referred from this lab this quarter" value="[ Lab_Result_GeneXpert:Number of GeneXpert samples referred from this lab this quarter ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">What is the Average TAT in this quarter (days)</td>
+			<td style="min-width:50px"><input id="XSsMsL7y4Hh-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:What is the Average  TAT in this quarter (days)" value="[ Lab_Result_GeneXpert:What is the Average  TAT in this quarter (days) ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Did the site participate in GeneXpert EQA this quarter?</td>
+			<td style="min-width:50px"><input id="VFdLQ4xcLsu-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:Did the site participate in GeneXpert  EQA this quarter?" value="[ Lab_Result_GeneXpert:Did the site participate in GeneXpert  EQA this quarter? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Did the site pass in TB culture PT?</td>
+			<td style="min-width:50px"><input id="zhw88WlC0xv-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:Did the site pass in TB culutre PT?" value="[ Lab_Result_GeneXpert:Did the site pass in TB culutre PT? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Was corrective action done and documented for failed TB culture PT?</td>
+			<td style="min-width:50px"><input id="M2PrIEUeBHi-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:Was corrective action done and documented for failed  TB culutre PT?" value="[ Lab_Result_GeneXpert:Was corrective action done and documented for failed  TB culutre PT? ]" /></td>
+		</tr>
+		<tr>
+			<td rowspan="9" style="min-width:50px; background-color: rgb(255, 229, 152);">TB-AFB</td>
+			<td style="min-width:50px">Does the facility perform TB-AFB?</td>
+			<td style="min-width:50px"><input id="xpGJIyJe82f-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:Does the perform TB-AFB?" value="[ Lab_Result_TBAFB:Does the perform TB-AFB? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Number of TB-AFB samples tested this quarter</td>
+			<td style="min-width:50px"><input id="PAI3eSgNFrT-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:Number of TB-AFB samples tested this quarter" value="[ Lab_Result_TBAFB:Number of TB-AFB samples tested this quarter ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">What is the average TAT in this quarter (days)</td>
+			<td style="min-width:50px"><input id="pAWSTflVOUH-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:What is the average  TAT in this quarter (days)" value="[ Lab_Result_TBAFB:What is the average  TAT in this quarter (days) ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Does the Lab refer TB-AFB samples to another Lab for Testing?</td>
+			<td style="min-width:50px"><input id="Jd5vu8Gpsgp-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:Does the Lab refer TB-AFB samples to another Lab for Testing?" value="[ Lab_Result_TBAFB:Does the Lab refer TB-AFB samples to another Lab for Testing? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Number of TB-AFB samples referred from this lab this quarter</td>
+			<td style="min-width:50px"><input id="nFSU4uMNpH0-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:Number of TB-AFB samples referred from this lab this quarter" value="[ Lab_Result_TBAFB:Number of TB-AFB samples referred from this lab this quarter ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">What is the Average TAT in this quarter (days)</td>
+			<td style="min-width:50px"><input id="ZkKXTIhGxdV-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:What is the Average  TAT in this quarter (days)" value="[ Lab_Result_TBAFB:What is the Average  TAT in this quarter (days) ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Did the site participate in TB-AFB EQA this quarter?</td>
+			<td style="min-width:50px"><input id="TrDwxUWT7lQ-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:Did the site participate in TB-AFB EQA this quarter?" value="[ Lab_Result_TBAFB:Did the site participate in TB-AFB EQA this quarter? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Did the site pass in TB-AFB PT?</td>
+			<td style="min-width:50px"><input id="kDxJMy8Esfs-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:Did the site pass in TB-AFB PT?" value="[ Lab_Result_TBAFB:Did the site pass in TB-AFB PT? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Was corrective action done and documented for failed TB-AFB?</td>
+			<td style="min-width:50px"><input id="kTm09yVMFmn-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:Was corrective action done and documented for failed  TB-AFB?" value="[ Lab_Result_TBAFB:Was corrective action done and documented for failed  TB-AFB? ]" /></td>
+		</tr>
+		<tr>
+			<td rowspan="9" style="min-width:50px; background-color: rgb(21, 226, 243);">CD4</td>
+			<td style="min-width:50px">Does the facility test for CD4?</td>
+			<td style="min-width:50px"><input id="bOcWz83SSl1-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:Does the test for CD4?" value="[ Lab_Result_CD4:Does the test for CD4? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Number of CD4 samples tested this quarter</td>
+			<td style="min-width:50px"><input id="OwZj11St93y-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:Number of CD4 samples tested this quarter" value="[ Lab_Result_CD4:Number of CD4 samples tested this quarter ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">What is the average TAT in this quarter (days)</td>
+			<td style="min-width:50px"><input id="D80ewvcvjPL-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:What is the average  TAT in this quarter (days)" value="[ Lab_Result_CD4:What is the average  TAT in this quarter (days) ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Does the Lab refer CD4 samples to another Lab for Testing?</td>
+			<td style="min-width:50px"><input id="EWRGoZYJn7C-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:Does the Lab refer CD4  samples to another Lab for Testing?" value="[ Lab_Result_CD4:Does the Lab refer CD4  samples to another Lab for Testing? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Number of CD4 samples referred from this lab this quarter</td>
+			<td style="min-width:50px"><input id="BEs232vbNGc-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:Number of CD4 samples referred from this lab this quarter" value="[ Lab_Result_CD4:Number of CD4 samples referred from this lab this quarter ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">What is the Average TAT in this quarter (days)</td>
+			<td style="min-width:50px"><input id="lVJsnEetP1p-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:What is the Average  TAT in this quarter (days)" value="[ Lab_Result_CD4:What is the Average  TAT in this quarter (days) ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Did the site participate in CD4 EQA this quarter?</td>
+			<td style="min-width:50px"><input id="PmG4JX8gG9C-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:Did the site participate in CD4  EQA this quarter?" value="[ Lab_Result_CD4:Did the site participate in CD4  EQA this quarter? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Did the site pass in CD4 PT?</td>
+			<td style="min-width:50px"><input id="er4MjnbvOek-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:Did the site pass in CD4  PT?" value="[ Lab_Result_CD4:Did the site pass in CD4  PT? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Was corrective action done and documented for failed CD4 ?</td>
+			<td style="min-width:50px"><input id="pFvu98XnvPv-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:Was corrective action done and documented for failed  CD4 ?" value="[ Lab_Result_CD4:Was corrective action done and documented for failed  CD4 ? ]" /></td>
+		</tr>
+		<tr>
+			<td rowspan="7" style="min-width:50px; background-color: rgb(197, 224, 179);">Rapid HIV</td>
+			<td style="min-width:50px">Does this facility perform rapid HIV testing?</td>
+			<td style="min-width:50px"><input id="qkNKEdnDYbO-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RapidHIV:Does this facility perform rapid HIV testing?" value="[ Lab_Result_RapidHIV:Does this facility perform rapid HIV testing? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Total number of staff offering HIV testing services in the facility</td>
+			<td style="min-width:50px"><input id="zbeReqlhRLv-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RapidHIV:Total number of staff offering HIV testing services in the facility" value="[ Lab_Result_RapidHIV:Total number of staff offering HIV testing services in the facility ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Total number of rapid HIV tests done in the quarter per site</td>
+			<td style="min-width:50px"><input id="t5B9q2vNT8y-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RapidHIV:Total number of rapid HIV tests done in the quarter per site" value="[ Lab_Result_RapidHIV:Total number of rapid HIV tests done in the quarter per site ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Was there a PT Round rolled out this quarter?</td>
+			<td style="min-width:50px"><input id="ksv5w15ltOQ-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RapidHIV:Was there a PT Round rolled out this quarter?" value="[ Lab_Result_RapidHIV:Was there a PT Round rolled out this quarter? ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Enter the PT round for which participants received a panel</td>
+			<td style="min-width:50px"><input id="XND90AhseiB-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RapidHIV:Enter the PT round for which partpicpants received a panel" value="[ Lab_Result_RapidHIV:Enter the PT round for which partpicpants received a panel ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Number of HIV testing staff participating in HIV PT per site in this quarter</td>
+			<td style="min-width:50px"><input id="twzEKxZi8kc-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RapidHIV:Number of HIV testing staff participating in HIV PT per site in this quarter" value="[ Lab_Result_RapidHIV:Number of HIV testing staff participating in HIV PT per site in this quarter ]" /></td>
+		</tr>
+		<tr>
+			<td style="min-width:50px">Number of HIV testing staff who passed the HIV PT in this quarter</td>
+			<td style="min-width:50px"><input id="LNZ0UHr4U2k-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RapidHIV:Number of HIV testing staff who passed the  HIV PT in this quarter" value="[ Lab_Result_RapidHIV:Number of HIV testing staff who passed the  HIV PT in this quarter ]" /></td>
+		</tr>
+		<tr>
+			<td rowspan="1" style="min-width:50px; background-color: gray;">&nbsp;</td>
+			<td style="min-width:50px">Is the facility implementing in any of the CQI activities<br />
+			listed? (RTCQI, SLMTA,&nbsp;CQI)?</td>
+			<td style="min-width:50px"><select id="choice" style="min-width: 450px;"><option disabled="disabled" selected="selected" value="">Please Select</option><option value="yes">Yes</option><option value="no">No</option> </select></td>
+		</tr>
+		<tr class="rtcqi">
+			<td rowspan="5" style="min-width:50px; background-color: white;">RTCQI</td>
+			<td style="min-width:50px">Indicate the HIV testing points in the facility?</td>
+			<td style="min-width:50px"><input id="HNzuO6XBmHn-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RTCQI:Indicate the HIV testing points in the facility" value="[ Lab_Result_RTCQI:Indicate the HIV testing points in the facility ]" /></td>
+		</tr>
+		<tr class="rtcqi">
+			<td style="min-width:50px">Indicate the HIV testing points on RTCQI</td>
+			<td style="min-width:50px"><input id="RfyofT37IJV-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RTCQI:Indicate the HIV testing points on RTCQI" value="[ Lab_Result_RTCQI:Indicate the HIV testing points on RTCQI ]" /></td>
+		</tr>
+		<tr class="rtcqi">
+			<td style="min-width:50px">Indicate the RTCQI sites audited this quarter</td>
+			<td style="min-width:50px"><input id="ENep2yUUHen-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RTCQI:Indicate the RTCQI sites audited this quarter" value="[ Lab_Result_RTCQI:Indicate the RTCQI sites audited this quarter ]" /></td>
+		</tr>
+		<tr class="rtcqi">
+			<td style="min-width:50px">Indicate the SPI-Checklist level rating achieved</td>
+			<td style="min-width:50px"><input id="whcFN3kq5uG-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RTCQI:Indicate the SPI-Checklist level rating achieved" value="[ Lab_Result_RTCQI:Indicate the SPI-Checklist level rating achieved ]" /></td>
+		</tr>
+		<tr class="rtcqi">
+			<td style="min-width:50px">Indicate the sites receiving RTCQI accreditation this quarter</td>
+			<td style="min-width:50px"><input id="zmEyVkwceoA-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RTCQI:Indicate the sites receiving RTCQI accrediattion this quarter" value="[ Lab_Result_RTCQI:Indicate the sites receiving RTCQI accrediattion this quarter ]" /></td>
+		</tr>
+		<tr class="slmta">
+			<td rowspan="5" style="min-width:50px; background-color: white;">SLMTA</td>
+			<td style="min-width:50px">Was the lab audited for SLMTA this quarter?</td>
+			<td style="min-width:50px"><input id="dXeIx0bu5iU-HllvX50cXC0-val" name="entryfield" title="Lab_Result_SLMTA:Was the lab audited for SLMTA this quarter?" value="[ Lab_Result_SLMTA:Was the lab audited for SLMTA this quarter? ]" /></td>
+		</tr>
+		<tr class="slmta">
+			<td style="min-width:50px">What is the SLMTA star rating</td>
+			<td style="min-width:50px"><input id="bqxYC2OI41z-HllvX50cXC0-val" name="entryfield" title="Lab_Result_SLMTA:What is the SLMTA star rating" value="[ Lab_Result_SLMTA:What is the SLMTA star rating ]" /></td>
+		</tr>
+		<tr class="slmta">
+			<td style="min-width:50px">Has the lab received an ASLM audit this quarter?</td>
+			<td style="min-width:50px"><input id="TdOWcpmGkCp-HllvX50cXC0-val" name="entryfield" title="Lab_Result_SLMTA:Has the lab received an ASLM audit this quarter?" value="[ Lab_Result_SLMTA:Has the lab received an ASLM audit this quarter? ]" /></td>
+		</tr>
+		<tr class="slmta">
+			<td style="min-width:50px">What is the ASLM star rating?</td>
+			<td style="min-width:50px"><input id="EKi3hhVki99-HllvX50cXC0-val" name="entryfield" title="Lab_Result_SLMTA:What is the ASLM star rating?" value="[ Lab_Result_SLMTA:What is the ASLM star rating? ]" /></td>
+		</tr>
+		<tr class="slmta">
+			<td style="min-width:50px">Is the lab ISO accredited</td>
+			<td style="min-width:50px"><input id="rvxJeSsSYaN-HllvX50cXC0-val" name="entryfield" title="Lab_Result_SLMTA:Is the lab ISO accredited?" value="[ Lab_Result_SLMTA:Is the lab ISO accredited? ]" /></td>
+		</tr>
+		<tr class="bioSafety">
+			<td rowspan="3" style="min-width:50px; background-color: rgb(251, 228, 213);">BioSafety</td>
+			<td style="min-width:50px">Number of laboratorians working in the lab</td>
+			<td style="min-width:50px"><input id="qtecCDSAvko-HllvX50cXC0-val" name="entryfield" title="Lab_Result_Biosafety:Number of laboratorians working in the lab" value="[ Lab_Result_Biosafety:Number of laboratorians working in the lab ]" /></td>
+		</tr>
+		<tr class="bioSafety">
+			<td style="min-width:50px">Number who have been trained on biosafety to date</td>
+			<td style="min-width:50px"><input id="N3ZWelrsIBq-HllvX50cXC0-val" name="entryfield" title="Lab_Result_Biosafety:Number who have been trained on biosafety to date" value="[ Lab_Result_Biosafety:Number who have been trained on biosafety to date ]" /></td>
+		</tr>
+		<tr class="bioSafety">
+			<td style="min-width:50px">Number who have received annual refresher training this quarter</td>
+			<td style="min-width:50px"><input id="MwCkXSHfwEl-HllvX50cXC0-val" name="entryfield" title="Lab_Result_Biosafety:Number who have received annual refresher training this quarter" value="[ Lab_Result_Biosafety:Number who have received annual refresher training this quarter ]" /></td>
+		</tr>
+		<tr class="equipment">
+			<td rowspan="2" style="min-width:50px; background-color: rgb(197, 224, 179);">Equipment<br />
+			Maintenance</td>
+			<td style="min-width:50px">Number of HIV-related equipment in this facility<br />
+			(microscope, CD4 Machines, BSC/TB hood, pipettes)</td>
+			<td style="min-width:50px"><input id="xncEoiZAt40-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EquipM:Number of HIV-related equipment in this facility (microscope, CD4 Machines, BSC/TB hood, pipettes)" value="[ Lab_Result_EquipM:Number of HIV-related equipment in this facility (microscope, CD4 Machines, BSC/TB hood, pipettes) ]" /></td>
+		</tr>
+		<tr class="equipment">
+			<td style="min-width:50px">Number of HIV-related equipment with up to date<br />
+			service/maintenance in this facility (microscope, CD4 Machines, BSC/TB hood, pipettes)</td>
+			<td style="min-width:50px"><input id="VGpQtcQP2Zp-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EquipM:Number of HIV-related equipment with up to date  service/maintenance in this facility (microscope, CD4 Machines, BSC/TB hood, pipettes)" value="[ Lab_Result_EquipM:Number of HIV-related equipment with up to date  service/maintenance in this facility (microscope, CD4 Machines, BSC/TB hood, pipettes) ]" /></td>
+		</tr>
+		<tr class="bloodSafety">
+			<td rowspan="4" style="min-width:50px; background-color: rgb(217, 226, 243);">Blood Safety</td>
+			<td style="min-width:50px">Is this a blood transfusing facility?</td>
+			<td style="min-width:50px"><input id="xZCFMyxp2YV-HllvX50cXC0-val" name="entryfield" title="Lab_Result_BloodSafety:Is this a blood transfusing facility?" value="[ Lab_Result_BloodSafety:Is this a blood transfusing facility? ]" /></td>
+		</tr>
+		<tr class="bloodSafety">
+			<td style="min-width:50px">Has the Hospital Transfusion Committee met this quarter?</td>
+			<td style="min-width:50px"><input id="pFtBxtcj0Vt-HllvX50cXC0-val" name="entryfield" title="Lab_Result_BloodSafety:Has the Hospital Transfusion Committee met this quarter?" value="[ Lab_Result_BloodSafety:Has the Hospital Transfusion Committee met this quarter? ]" /></td>
+		</tr>
+		<tr class="bloodSafety">
+			<td style="min-width:50px">Number of transfusions done in this quarter</td>
+			<td style="min-width:50px"><input id="LRCekmjopOs-HllvX50cXC0-val" name="entryfield" title="Lab_Result_BloodSafety:Number of transfusions done in this quarter" value="[ Lab_Result_BloodSafety:Number of transfusions done in this quarter ]" /></td>
+		</tr>
+		<tr class="bloodSafety">
+			<td style="min-width:50px">Number of components used in this quarter</td>
+			<td style="min-width:50px"><input id="d98A43oTUMK-HllvX50cXC0-val" name="entryfield" title="Lab_Result_BloodSafety:Number of components used in this quarter" value="[ Lab_Result_BloodSafety:Number of components used in this quarter ]" /></td>
+		</tr>
+		<tr class="ipc">
+			<td rowspan="2" style="min-width:50px; background-color: rgb(251, 192, 0);">IPC</td>
+			<td style="min-width:50px">Has the IPC Committee met this quarter?</td>
+			<td style="min-width:50px"><input id="o287NRe2JeS-HllvX50cXC0-val" name="entryfield" title="Lab_Result_IPC:Has the IPC Committee met this quarter?" value="[ Lab_Result_IPC:Has the IPC Committee met this quarter? ]" /></td>
+		</tr>
+		<tr class="ipc">
+			<td style="min-width:50px">How many staff have been trained on IPC, HCWM, Safe Phlebotomy? This quarter</td>
+			<td style="min-width:50px"><input id="j6pYh9vjibp-HllvX50cXC0-val" name="entryfield" title="Lab_Result_IPC:How many staff have been trained on IPC , HCWM, Safe Phlebotomy This quarter?" value="[ Lab_Result_IPC:How many staff have been trained on IPC , HCWM, Safe Phlebotomy This quarter? ]" /></td>
+		</tr>
+		<tr class="testing">
+			<td rowspan="3" style="min-width:50px; background-color: rgb(112, 48, 160);">Testing<br />
+			Interruption</td>
+			<td style="min-width:50px">Was there testing interruption for<br />
+			(Rapid HIV test, VL, EID, CD4, Gene Xpert TB Microscopy and TB Culture)</td>
+			<td style="min-width:50px"><input id="Zsg0sTKXiyE-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TestingI:Was there testing interruption for (Rapid  HIV test, VL, EID, CD4, Gene Xpert TB Microscopy and TB Culture)" value="[ Lab_Result_TestingI:Was there testing interruption for (Rapid  HIV test, VL, EID, CD4, Gene Xpert TB Microscopy and TB Culture) ]" /></td>
+		</tr>
+		<tr class="testing">
+			<td style="min-width:50px">How long was the test interrupted? (days)</td>
+			<td style="min-width:50px"><input id="nWfiermYUwV-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TestingI:How long was the test interrupted? (days)" value="[ Lab_Result_TestingI:How long was the test interrupted? (days) ]" /></td>
+		</tr>
+		<tr class="testing">
+			<td style="min-width:50px">What was the reason?(Stockouts, power outage, equipment breakdown, staffing)</td>
+			<td style="min-width:50px"><input id="LabGzhluYvp-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TestingI:What was the reason ?(Stock outs, power outage, equipment breakdown, staffing)" value="[ Lab_Result_TestingI:What was the reason ?(Stock outs, power outage, equipment breakdown, staffing) ]" /></td>
+		</tr>
+	</tbody>
+</table>
